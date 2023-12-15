@@ -8,6 +8,7 @@
   justify-content: center;
   align-items: center;
   font-size: xx-large;
+  flex-direction: column;
 }
 
 body {
@@ -17,23 +18,27 @@ body {
   font-size: 60px;
   text-shadow: 0 0 15px rgb(0, 59, 0);
   height: 100%;
-  margin: 0; /* Remove default body margin */
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* App.css */
-
 #loading {
   visibility: visible;
-  display: flex; /* Add this line to make it a flex container */
-  align-items: center; /* Center the text vertically */
+  display: flex;
+  align-items: center;
   justify-content: center;
-  text-align: center; /* Center the text horizontally */
-  font-size: xx-large; /* Adjust the font size if needed */
+  text-align: center;
+  font-size: xx-large;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  color: rgb(50, 228, 50);
 }
-
 
 .glow {
   color: rgb(50, 228, 50);
@@ -45,3 +50,17 @@ span {
   padding: 0 10px;
 }
 
+.contactButton {
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: rgb(50, 228, 50);
+  color: black;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: large;
+  margin-top: 10px;
+}
+.contactButton:hover {
+  background-color: rgb(27, 130, 27);
+  transition: 0.3ss;
+}
